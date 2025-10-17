@@ -1,0 +1,30 @@
+/* index.css - Página inicial */
+h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+.spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
